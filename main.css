@@ -15,6 +15,9 @@ html{
     bottom: 0;
     
 }
+.justify {
+    text-align: center;    
+}
 .container {
     background-color:rgb(238, 234, 234) ;
     margin:300px;
