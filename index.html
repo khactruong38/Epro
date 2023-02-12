@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<style>
+    .fs-2-5 {
+        font-size: 2.5vw;
+    }
+    .fs-12 {
+        font-size: 12px;
+    }
+    .fs-14 {
+        font-size: 14px;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    html {
+        font-family: 'Roboto', sans-serif;
+    }
+    li {
+        list-style-type: none;
+    }
+    .navigation {
+        height: 64px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5%;
+        margin-bottom: 0;
+    }
+    .navigation li {
+        display: inline;
+        vertical-align: middle;
+    }
+    .navigation li:nth-child(1) {
+        width: 19vw;
+    }
+    .navigation li:nth-child(2) {
+        position: relative;
+    }
+    .navigation li:nth-child(3) {
+        width: 6.5vw;
+        padding-left:2px ;
+    }
+    .navigation li:nth-child(4) {
+        width: 4.2vw;
+        padding-bottom: 4px;
+    }
+    .navigation li:nth-child(4) img {
+        height: 16px;
+    }
+    input:focus {
+        /* box-shadow: 0 0 10px #65a6ec; */
+        box-shadow: 0 0 4px #2a7acf;
+        border: none;
+    }
+    #search {
+        height: 26px;
+        width: 45vw;
+        padding: 6px 10px;
+        border: 1px solid rgba(38, 37, 81, 0.28);
+        border-radius: 7px;
+        font-size: 14px;
+        font-weight: 500;
+        transition: .2s;
+    }
+    .icon_search {
+        position: absolute;
+        top: 7px;
+        right: 10px;
+        height: 12.33px;
+        width: 12.33px;
+    }
+    .banner {
+        background-color: #C0D5F5;
+        width: 100%;
+        height: 46vw;
+        position: relative;
+
+    }
+    .content_banner {
+        text-align: center;
+    }
+    .content_banner h2 {
+        font-size: 5.2vw;
+        line-height: 25px;
+        padding-top: 60px;
+        margin-bottom: 2.5vw;
+        color: #034565;
+    }
+    .content_banner p {
+        padding: 0 20%;
+        color: #575757;
+    }
+    .set_banner--img1 {
+        width: 146px;
+        position: absolute;
+        top: -36px;
+        left: 4px;
+        transform: rotatex(22.8deg);
+        }
+    .set_banner--img2 {
+        height: 96.15px;
+        width: 96.15px;
+        position: absolute;
+        right: 4px;
+        top: 6px;
+    }
+    .course {
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 16px;
+        padding: 0;
+        margin-top: 24px;
+        overflow: hidden;
+        position: relative;
+    }
+    .status {
+        position: absolute;
+        background-color: #F5AC3D;
+        top: 0;
+        right: 8vw;
+        padding:11px 16px;
+        border-radius: 0px 0px 6px 6px;
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+    }
+    .status p {
+        margin-bottom: 0;
+        line-height: 16px;
+    }
+    .item {
+        padding: 16px 5%;
+
+    }
+    .course_header {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        line-height: 16px;
+        color: #333333;
+    }
+    
+    .building {
+        padding-right: 6px;
+    }
+    
+    .course_location {
+        color: #848484;
+    }
+    .course_content {
+        color: #333333;
+        margin: 4px 0 14px 0;
+    }
+    .set_icon {
+        width: 19px;
+        height: 19px;
+        margin-top: 1.4px;
+        margin-right: 8px;
+    }
+    
+    @media(max-width:600px) {
+        .body {
+            padding: 0 5%;
+        }
+    }
+    @media(min-width:500px){
+        .content_banner h2 {
+            padding-top: 12vw;
+        }
+        .set_banner--img1 {
+            width: 30vw;
+        }
+        .set_banner--img2 {
+            width: 22vw;
+            height: 22vw;
+        }
+    }
+</style>
+<body>
+    <div id="main">
+        <div id="header">
+            <ul class="navigation">
+                <li><img src="./Group 175.svg" alt=""></li>
+                <li><input  placeholder="Tìm kiếm đề thi" type="text" name="" id="search" ><img class="icon_search" src="./Vector (Stroke).svg" alt=""></li>
+                <li><img src="./Group 33666.svg" alt=""></li>
+                <li><img src="./Group 33667.svg" alt=""></li>
+            </ul>
+        </div>
+        <div class="banner">
+            <img class="set_banner--img1" src="./IconBusinessv3_5_ 1.svg" alt="">
+            <img class="set_banner--img2" src="./data_informationv2_7 1.svg" alt="">
+            <div class="content_banner">
+                <h2>Lớp học của tôi</h2>
+                <p class="fs-2-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non neque pharetra est nulla occumsan. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non neque pharetra est nulla occumsan.</p>
+            </div>
+        </div>
+        <div class="body">
+            <div class="img-fluid course container">
+                    <div class="fs-14 status">
+                        <p>Đang học</p>
+                    </div>
+                    <img src="./Rectangle 610.png" alt="" class="w-100 d-block mx-auto img-fluid">
+                    <div class="item">
+                    <h3 class="course_header fs-14 ml-3">Lớp A300 Ielts tháng 10 - 2022</h3>
+                    <div class="course_location fs-12 d-flex">
+                        <img class="bg building" src="./Buildings.svg" alt="">
+                        <p class=" mb-0 bg flex-grow-1 ">250 Nguyễn Văn Cừ</p>
+                    </div>
+                    <p class="course_content fs-12">Chắc hẳn không ít bạn đọc vẫn đang băn khoăn Luận văn tốt nghiệp tiếng ...</p>
+                    <div class="row">
+                        <div class="col-3 fs-14 d-flex justify-content-center"><img class="set_icon" src="./Profile.svg" alt=""><b>15</b> </div>
+                        <div class="col-3 fs-14 d-flex justify-content-center"><img class="set_icon" src="./Paper.svg" alt=""><b>6</b> </div>
+                        <div class="col-3 fs-14 d-flex justify-content-center"><img class="set_icon" src="./Play.svg" alt=""><b>0</b> </div>
+                        <div class="col-3 fs-14 d-flex justify-content-center"><img class="set_icon" src="./Folder.svg" alt=""><b>0</b> </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="img-fluid course container">
+                    <div class="fs-14 status">
+                        <p>Đang học</p>
+                    </div>
+                    <img src="./Rectangle 610.png" alt="" class="w-100 d-block mx-auto img-fluid">
+                    <div class="item">
+                    <h3 class="course_header fs-14 ml-3">Lớp A300 Ielts tháng 10 - 2022</h3>
+                    <div class="course_location fs-12 d-flex">
+                        <img class="bg building" src="./Buildings.svg" alt="">
+                        <p class=" mb-0 bg flex-grow-1 ">250 Nguyễn Văn Cừ</p>
+                    </div>
+                    <p class="course_content fs-12">Chắc hẳn không ít bạn đọc vẫn đang băn khoăn Luận văn tốt nghiệp tiếng ...</p>
+                    <div class="row">
+                        <div class="col-3 fs-14 d-flex justify-content-center"><img class="set_icon" src="./Profile.svg" alt=""><b>15</b> </div>
+                        <div class="col-3 fs-14 d-flex justify-content-center"><img class="set_icon" src="./Paper.svg" alt=""><b>6</b> </div>
+                        <div class="col-3 fs-14 d-flex justify-content-center"><img class="set_icon" src="./Play.svg" alt=""><b>0</b> </div>
+                        <div class="col-3 fs-14 d-flex justify-content-center"><img class="set_icon" src="./Folder.svg" alt=""><b>0</b> </div>
+                    </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
